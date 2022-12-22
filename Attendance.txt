@@ -1,4 +1,4 @@
-Name : 65165
-No. : 65165
+Name : Nutthinun Panawong
+StudentID : 2213111392
 AKA :
-Class : 65165
+Class : Class and Object
