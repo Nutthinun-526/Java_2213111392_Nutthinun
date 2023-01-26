@@ -1,43 +1,49 @@
-import java.time.Year;
 
 public class Book {
 
 	private String title;
-	private float price;
-	private int publishyear;
+	private Author author;//composition concept
+	private int page;
 	
-	public void setTitle(String title) {
+	public Book (String title,Author author,int page) {
 		this.title = title;
+		this.author = author;
+		this.page = page;
+		//this(title,author,page)
+	}
+	
+	public Book (String title,Author author) {
+		this.title = title;
+		this.author = author;
+		page = 0;
+		//this(title,author,0)
+	}
+	
+	public Book() {
+		title = "";
+		author = null;
+		page = 0;
+		//this(null,null,0);
 	}
 	
 	public String getTitle() {
-		return title;
+		return this.title;
 	}
 	
-	public void setPrice(float price) {
-		this.price = price;
+	public Author getAuthor() {
+		return this.author;
 	}
 	
-	public float getPrice() {
-		return price;
+	public void setPage(int page) {
+		this.page = page;
 	}
 	
-	public void setPublishyear(int year) {
-		this.publishyear = year;
-	}
-		
-	public int getPublishyear() {
-		return publishyear;
+	public int getPage() {
+		return this.page;
 	}
 	
-	public int getTotalYear() {
-		return Year.now().getValue()-publishyear;
-	}
-
 	public String toString() {
-		return String.format("Title: "+ title +" published for "+ getTotalYear() +" year ("+ price +" baht).");
+		return getTitle() +" has "+ getPage() + " pages write by " +author;
 	}
-	
-
 
 }
