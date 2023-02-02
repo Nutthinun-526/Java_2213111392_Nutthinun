@@ -1,0 +1,44 @@
+
+public class Theater extends Movie {
+
+	private int theaterNo;
+	
+	public Theater (String id, String name, Director director, int theaterNo){
+		super();
+		this.theaterNo = theaterNo;
+	}
+	
+	public Theater() {
+		super();
+		this.theaterNo = 0;
+	}
+	
+	public String getTheterName() {
+		if(theaterNo >= 1 && theaterNo <= 11)
+		{
+		     return "Basic Theater";	
+		}
+		else if(theaterNo >= 12 && theaterNo <= 14)
+		{
+		     return "Sweet Theater";	
+		}
+		else if(theaterNo >= 15)
+		{
+		     return "Premium Theater";	
+		}
+		else {
+				return null;
+		}
+		
+	
+		
+		
+		
+	}
+	
+	@Override
+	public String toString() {
+		return ""+getTheterName()+":"+super.toString();
+	}
+
+}
