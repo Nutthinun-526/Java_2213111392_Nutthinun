@@ -1,5 +1,5 @@
 Name : Nutthinun Panawong
 StudentID : 2213111392
-AKA :
-Class : Class and Object
-[2-2-2023]
+AKA : Nutthinun-526
+Class : Adstract & Interface
+Date : [9-2-2023]
